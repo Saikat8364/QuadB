@@ -1,0 +1,164 @@
+<%- include('partials/header') %>
+<!-- Top Container -->
+<div class="container-fluid top-container">
+  <div class="row">
+    <div class="col">
+      <p class="top-cont-p"><span class="title-head">HODLINFO</span>.com</p>
+      <p class="top-cont-p">Powered by <span class="top-fin">Finstreet</span></p>
+    </div>
+    <div class="col-6 top-middle">
+      <div class="btn-group">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            INR
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">INR</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            BTC
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">BTC</a>
+            <a class="dropdown-item" href="#">ETH</a>
+            <a class="dropdown-item" href="#">USDT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col top-right">
+      <button onclick="reload()" type="button" class="btn btn-primary btn-circle btn-sm"><i class="fas fa-redo"></i></button> 
+      <button type="button" class="btn btn-primary btn-lg"><i class="fab fa-telegram-plane"></i> Connect Telegram</button>
+      <!-- Rounded switch -->
+      <label class="switch">
+        <input onclick="myFunction()" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- Middle Container -->
+<div class="fiat-crypto-table table-responsive" style="margin: 0px auto;">
+
+  <table class="table table-borderless table-dark text-center" id="table">
+    <thead class="table-head">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Last</th>
+        <th scope="col">Buy/Sell Price</th>
+        <th scope="col">Volume</th>
+        <th scope="col">Base Unit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td><%=data.btcinr.name%></td>
+        <td>₹<%=data.btcinr.last%></td>
+        <td>₹<%=data.btcinr.buy%>/₹<%=data.btcinr.sell%></td>
+        <td><%=data.btcinr.volume%></td>
+        <td><%=data.btcinr.base_unit%></td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td><%=data.xrpinr.name%></td>
+        <td>₹<%=data.xrpinr.last%></td>
+        <td>₹<%=data.xrpinr.buy%>/₹<%=data.xrpinr.sell%></td>
+        <td><%=data.xrpinr.volume%></td>
+        <td><%=data.xrpinr.base_unit%></td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td><%=data.ethinr.name%></td>
+        <td>₹<%=data.ethinr.last%></td>
+        <td>₹<%=data.ethinr.buy%>/₹<%=data.ethinr.sell%></td>
+        <td><%=data.ethinr.volume%></td>
+        <td><%=data.ethinr.base_unit%></td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td><%=data.trxinr.name%></td>
+        <td>₹<%=data.trxinr.last%></td>
+        <td>₹<%=data.trxinr.buy%>/₹<%=data.trxinr.sell%></td>
+        <td><%=data.trxinr.volume%></td>
+        <td><%=data.trxinr.base_unit%></td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td><%=data.eosinr.name%></td>
+        <td>₹<%=data.eosinr.last%></td>
+        <td>₹<%=data.eosinr.buy%>/₹<%=data.eosinr.sell%></td>
+        <td><%=data.eosinr.volume%></td>
+        <td><%=data.eosinr.base_unit%></td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td><%=data.zilinr.name%></td>
+        <td>₹<%=data.zilinr.last%></td>
+        <td>₹<%=data.zilinr.buy%>/₹<%=data.zilinr.sell%></td>
+        <td><%=data.zilinr.volume%></td>
+        <td><%=data.zilinr.base_unit%></td>
+      </tr>
+      <tr>
+        <th scope="row">7</th>
+        <td><%=data.batinr.name%></td>
+        <td>₹<%=data.batinr.last%></td>
+        <td>₹<%=data.batinr.buy%>/₹<%=data.batinr.sell%></td>
+        <td><%=data.batinr.volume%></td>
+        <td><%=data.batinr.base_unit%></td>
+      </tr>
+      <tr>
+        <th scope="row">8</th>
+        <td><%=data.usdtinr.name%></td>
+        <td>₹<%=data.usdtinr.last%></td>
+        <td>₹<%=data.usdtinr.buy%>/₹<%=data.usdtinr.sell%></td>
+        <td><%=data.usdtinr.volume%></td>
+        <td><%=data.usdtinr.base_unit%></td>
+      </tr>
+      <tr>
+        <th scope="row">9</th>
+        <td><%=data.wrxinr.name%></td>
+        <td>₹<%=data.wrxinr.last%></td>
+        <td>₹<%=data.wrxinr.buy%>/₹<%=data.wrxinr.sell%></td>
+        <td><%=data.wrxinr.volume%></td>
+        <td><%=data.wrxinr.base_unit%></td>
+      </tr>
+      <tr>
+        <th scope="row">10</th>
+        <td><%=data.maticinr.name%></td>
+        <td>₹<%=data.maticinr.last%></td>
+        <td>₹<%=data.maticinr.buy%>/₹<%=data.maticinr.sell%></td>
+        <td><%=data.maticinr.volume%></td>
+        <td><%=data.maticinr.base_unit%></td>
+      </tr>
+
+
+    </tbody>
+  </table>
+
+</div>
+
+
+
+<script>
+  function myFunction() {
+     var element = document.body;
+     var secondElement = document.getElementById("table");
+     console.log(secondElement);
+     element.classList.toggle("light-mode");
+     secondElement.classList.toggle("dark-table");
+  }
+
+  function reload(){
+    location.reload();
+  }
+  </script>
+</body>
+
+</html>

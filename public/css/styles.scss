@@ -1,0 +1,149 @@
+.btn-circle.btn-sm {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  border-radius: 3rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+body {
+  background-color: #15122c;
+  padding: 1rem;
+}
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  color: rgb(0, 255, 179);
+}
+
+.top-container {
+  padding: 3rem 4rem;
+  color: #e6d5b8;
+}
+.top-cont-p {
+  margin-bottom: 0;
+}
+.dropdown-toggle {
+  margin-right: 2rem;
+  border-radius: 0.75rem;
+}
+
+.top-fin {
+  color: rgb(0, 204, 255);
+}
+
+.title-head {
+  font-size: 250%;
+  color: rgb(0, 204, 255);
+}
+
+.top-middle {
+  padding-top: 1.3rem;
+  text-align: center;
+}
+.top-right {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+/* Slider */
+/* The switch - the box around the slider */
+.switch {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #15122c;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: white;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* TABLE CSS */
+.table tbody tr {
+  background-color: #3e386e;
+  font-weight: bold;
+  color: white;
+}
+
+.table tbody tr th {
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.table tbody tr td:last-child {
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+.table td,
+.table th {
+  border-collapse: separate;
+  border-top: 0px;
+}
+
+.table {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  background-color: #15122c;
+}
+.dark-table {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  background-color: white;
+  color: black;
+}
