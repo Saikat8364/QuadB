@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
-  "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
-  },
+ 
   "author": "",
   "license": "ISC",
   "engines": {
@@ -19,9 +16,6 @@
     "https": "^1.0.0",
     "node-fetch": "^2.6.1"
   },
-  "devDependencies": {
-    "@babel/core": "7.2.0",
-    "parcel-bundler": "^1.6.1"
-  }
+ 
  
 }
