@@ -2,6 +2,9 @@
   "name": "quadb",
   "version": "1.0.0",
   "description": "",
+  "engine": {
+    "node":"14.15.1"
+  },
   "main": "app.js",
   "scripts": {
     "start": "parcel index.html --open",
