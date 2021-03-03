@@ -156,6 +156,24 @@ input:checked + .slider:before {
   text-align: center;
 }
 
+@media(max-width:450px){
+  .top-right{
+    padding-left: 5px;
+  }
+  .top-right button{
+    width: 70%;
+    font-size: 70%;
+  }
+  .top-right label{
+    width: 20%;
+  }
+  input:checked + .slider:before {
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
+  }
+
+}
 
 @media(max-width:380px){
   .top-right{
