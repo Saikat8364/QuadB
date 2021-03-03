@@ -18,6 +18,10 @@
     "express": "^4.17.1",
     "https": "^1.0.0",
     "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
   }
  
 }
